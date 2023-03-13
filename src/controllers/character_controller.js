@@ -17,8 +17,8 @@ export default class CharacterController extends BaseController {
       return super.ErrorBadRequest(res, { message: "Bad Request: number must me greater than 0" });
     }
     
-    const randomNumber = getRandomInteger(1, number);
-    const idArray = generateRangeNumArray(randomNumber);
+    const randomNumber = getRandomInteger(1, number); // we generate a random number of characters between 1 and number to return.
+    const idArray = generateRangeNumArray(randomNumber); // id array for query parameter.
     const url = `https://rickandmortyapi.com/api/character/[${idArray}]`;
     const getResponse = await getData(url);
     const finalData = getResponse.data.map(data => {

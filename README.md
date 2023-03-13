@@ -34,4 +34,4 @@ La documentacion se encuentra en: `http://localhost:8080/api-docs/` (se debe est
 
 ## Suposiciones y Consideraciones
 
-Para el endpoint de entregar a lo mas N personajes, se elige un numero random entre 1 y N y se utiliza un array con los ids de los personajes para obtenerlos.
+Para el endpoint de entregar a lo mas N personajes, se elige un numero random entre 1 y N y se utiliza un array con los ids de los personajes para obtenerlos. (https://rickandmortyapi.com/documentation/#get-multiple-characters)
